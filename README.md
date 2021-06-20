@@ -7,10 +7,19 @@ Technologies:
 - pandas;
 - pandas_datareader;
 - numpy;
-- scikit-learn.
+- scikit-learn;
+- matplotlib.pyplot;
+- argparse.
 
 Data source:
 finance.yahoo.com
+
+To Run:
+- python3 predictor.py --mode Mode --company Company
+
+By default:
+- Mode == 'predict' (also we can use Mode == 'train');
+- Company == 'NFLX' (also we can use as Company one of ['FB', 'AMZN', 'TSLA', 'GOOG', 'AAPL'] )
 
 #### License
 

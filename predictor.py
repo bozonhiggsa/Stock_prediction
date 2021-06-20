@@ -13,7 +13,7 @@ from evaluate_on_test import estimate_on_test
 if __name__ == '__main__':
     # arguments parser for running directly from the command line
     parser = argparse.ArgumentParser(description='Parameters for training and prediction')
-    parser.add_argument('--mode', '-m', help='Mode - train or predict', default='train')
+    parser.add_argument('--mode', '-m', help='Mode - train or predict', default='predict')
     parser.add_argument('--company', '-c', help='Company Name', default='NFLX')
     args = parser.parse_args()
 
@@ -59,6 +59,4 @@ if __name__ == '__main__':
             print(f'Prediction ({args.company}) for now: {predicted_price_today}')
         else:
             print('There is no pretrained model for prediction for current day!')
-
-
 
